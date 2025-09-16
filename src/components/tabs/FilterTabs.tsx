@@ -7,7 +7,7 @@ import { UpBentArrowIcon } from '@/shared';
 import LittleChartIcon from '@/shared/LittleChartIcon';
 
 interface FilterTabsProps {
-    options: (string | number | CheckboxOptionType<any>)[] | undefined,
+    options: (string | number | CheckboxOptionType<unknown>)[] | undefined,
     defaultValue: string
 }
 
