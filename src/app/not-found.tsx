@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 export default function Custom404(){
   const router = useRouter();
     return (
-        <div className="max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:px-8 min-h-screen bg-gradient-to-br from-primary via-purple-900 to-slate-900 flex items-center justify-center p-4 overflow-hidden">
+        <div className="mx-auto py-16 px-4 sm:px-6 lg:px-8 min-h-screen bg-gradient-to-br from-primary via-purple-900 to-slate-900 flex items-center justify-center p-4 overflow-hidden">
 
             <div className="relative z-10 text-center max-w-2xl mx-auto">
                 <div className="relative mb-8">

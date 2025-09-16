@@ -16,7 +16,7 @@ function FilterTabs({ options, defaultValue }: FilterTabsProps) {
     return (
         <Space className='my-8'>
             <Segmented
-                className='w-full [&>label]:!hidden ant-segmented-group-filter'
+                // className='w-full [&>label]:!hidden ant-segmented-group-filter'
                 style={{
                     border: "0 !important",
                     display: "flex",

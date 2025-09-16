@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // webpack: (config) => {
- turbopack: (config: any) => {
+  webpack: (config: any) => {
     config.resolve.alias = {
       ...config.resolve.alias,
       'antd/lib': 'antd/es'

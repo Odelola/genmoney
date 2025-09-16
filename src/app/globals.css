@@ -185,7 +185,7 @@ h5 {
 }
 
 .ant-segmented {
-    @apply !border-0 !bg-none flex justify-between !gap-x-6
+    @apply !border-0 !bg-transparent flex justify-between !gap-x-6
 }
 
 .ant-segmented-group {

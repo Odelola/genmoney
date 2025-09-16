@@ -39,7 +39,7 @@ function StocksSectionTable() {
     },
     {
       key: '2',
-      symbol: <ImageWrapper renderIcon={MetaIcon} alt="Apple Icon" company="META" />,
+      symbol: <ImageWrapper renderIcon={MetaIcon} alt="Meta Icon" company="META" />,
       name: 'Meta Inc.',
       price: "$157.07",
       change: <PercentageIndicator />,
@@ -47,7 +47,7 @@ function StocksSectionTable() {
     },
     {
       key: '3',
-      symbol: <ImageWrapper renderIcon={NvidiaIcon} alt="Apple Icon" company="NVDA" />,
+      symbol: <ImageWrapper renderIcon={NvidiaIcon} alt="NVDA Icon" company="NVDA" />,
       name: 'Nvidia Corp',
       price: "$157.07",
       change: <PercentageIndicator />,
@@ -55,7 +55,7 @@ function StocksSectionTable() {
     },
     {
       key: '4',
-      symbol: <ImageWrapper renderIcon={HimsIcon} alt="Apple Icon" company="HIMS" />,
+      symbol: <ImageWrapper renderIcon={HimsIcon} alt="HIMS Icon" company="HIMS" />,
       name: 'His & Hers Health',
       price: "$157.07",
       change: <PercentageIndicator />,
