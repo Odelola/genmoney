@@ -1,0 +1,52 @@
+{
+  "name": "genmoney",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "next lint --fix",
+    "lint:check": "next lint",
+    "lint-staged": "lint-staged",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write --list-different .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "eslint"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/nextjs-registry": "^1.1.0",
+    "@ant-design/plots": "^2.6.4",
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "@svgr/webpack": "^8.1.0",
+    "antd": "^5.27.3",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/types": "^19.8.1",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "conventional-changelog-atom": "^5.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971"
+}

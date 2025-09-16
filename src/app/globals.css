@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'OpenSauce-Regular';
+    font-weight: 400;
+    src: url('../assets/fonts/OpenSauceOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSauce-Medium';
+    font-weight: 500;
+    src: url('../assets/fonts/OpenSauceOne-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSauce-Semibold';
+    font-weight: 600;
+    src: url('../assets/fonts/OpenSauceOne-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSauce-Bold';
+    font-weight: 700;
+    src: url('../assets/fonts/OpenSauceOne-Bold.ttf');
+}
+
+@theme {
+
+    --color-primary: #3C00FF;
+    --color-primary-200: #D8CCFF;
+
+    --color-white-50: #F2F4F7;
+    --color-white-100: #E9EAEB;
+    --color-white-200: #EDEFF2;
+    --color-white-300: #F8F8F9;
+    --color-white-400: #E8EBED;
+    --color-white-500: #EAECF0;
+    --color-white-600: #ECEFF4;
+
+    --color-dark-600: #343330;
+    --color-dark-700: #090A0B;
+
+    --color-grey-200: #A7B3B9;
+    --color-grey-300: #F7FAFD;
+    --color-grey-400: #BBC2C9;
+    --color-grey-500: #60707A;
+    --color-grey-600: #383D41;
+    --color-grey-700: #8A8198;
+
+    --color-red-100: #FF6154;
+
+    --color-green-100: #2EB200;
+
+    --container-3xl: 1400px;
+
+}
+
+* {
+    font-family: 'OpenSauce-Regular', sans-serif;
+}
+
+h1 {
+    font-family: 'OpenSauce-Semibold', sans-serif;
+}
+
+h2 {
+    font-family: 'OpenSauce-Medium', sans-serif;
+}
+
+h1 {
+    font-family: 'OpenSauce-Semibold', sans-serif;
+}
+
+h5 {
+    font-family: 'OpenSauce-Medium', sans-serif;
+}
+
+.font-opensauce-semibold {
+    font-family: 'OpenSauce-Semibold', serif;
+}
+
+.font-opensauce-bold {
+    font-family: 'OpenSauce-Bold', serif;
+}
+
+.font-opensauce-regular {
+    font-family: 'OpenSauce-Regular', sans-serif !important;
+}
+
+.font-opensauce-medium {
+    font-family: 'OpenSauce-Medium', sans-serif !important;
+}
+
+.font-opensauce-semibold {
+    font-family: 'OpenSauce-Semibold', sans-serif !important;
+}
+
+/* .ant-input-filled:focus-within {
+    outline: 0;
+    border-color: var(--color-primary);
+    background-color: initial;
+} */
+
+.ant-input-filled:hover {
+    /* background: initial; */
+}
+
+.ant-input-filled:not(:focus) {
+    border-color: #cbd5e0;
+}
+
+.ant-input-group-addon {
+    @apply !hidden
+}
+
+.ant-btn-reset {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    font-family: inherit;
+    width: 100%;
+    color: var(--color-primary);
+    min-height: 52px;
+    border: 1px solid var(--color-primary);
+    gap: 8px;
+}
+
+.ant-btn-reset-disabled {
+    background: var(--color-primary-200);
+    border-radius: 30px;
+    color: var(--color-white-50);
+    border: 0;
+}
+
+.ant-btn {
+    @apply !border-0 !ring-0 !shadow-none
+}
+
+.ant-btn:hover {
+    @apply !text-inherit !border-inherit !bg-inherit
+}
+
+.ant-table-wrapper .ant-table-thead th {
+    @apply !bg-transparent !text-grey-500 !border-r-0 !border-b-white-400
+}
+
+.ant-table-wrapper .ant-table-thead th:last-child {
+    @apply w-36
+}
+
+.ant-table-wrapper .ant-table-thead th::before {
+    @apply hidden
+}
+
+.ant-table-wrapper .ant-table-tbody tr {
+    @apply !text-grey-600
+}
+
+.ant-radio-button-wrapper {
+    @apply font-semibold
+}
+
+.ant-radio-button-wrapper>button {
+    @apply !border-transparent
+}
+
+.ant-radio-button-wrapper-checked .ant-radio-button-label {
+    @apply !border-primary text-primary
+}
+
+.ant-card-shrunk .ant-card-body {
+    @apply !p-4
+}
+
+.ant-select-selector {
+    /* @apply !border-white-400 !bg-transparent !bg-red-400 */
+}
+
+.ant-segmented {
+    @apply !border-0 !bg-none flex justify-between !gap-x-6
+}
+
+.ant-segmented-group {
+    @apply gap-x-6
+}
+
+.ant-segmented-group label {
+    @apply flex-1 p-1 font-medium border-2 border-transparent !shadow-none !rounded-full !outline-none text-grey-200 !bg-white-50
+}
+
+.ant-segmented-group-filter label {
+    @apply !text-grey-500
+}
+
+.ant-segmented-group .ant-segmented-item-selected {
+    @apply border-primary
+}
+
+.ant-segmented-group .ant-segmented-item-selected h2,
+.ant-segmented-group .ant-segmented-item-selected .ant-segmented-item-label {
+    @apply !text-primary
+}
+
+.ant-segmented-group label:hover {
+    @apply border-primary !bg-transparent !text-primary
+}
+
+.ant-segmented-group label svg path {
+    @apply !stroke-dark-600
+}
+
+.ant-segmented-group .ant-segmented-item-selected svg path,
+.ant-segmented-group label:hover svg path {
+    @apply !stroke-primary
+}
+
+.table-responsive .ant-table-tbody > tr > td {
+  padding: 8px 4px;
+}
+
+@media (max-width: 768px) {
+  .table-responsive .ant-table-tbody > tr > td {
+    padding: 6px 2px;
+    font-size: 14px;
+  }
+}
