@@ -1,6 +1,6 @@
-import { AppleIcon, CircleAddIcon, HimsIcon, MetaIcon, NvidiaIcon, RingNotificationIcon } from "@/assets/svgs";
+import { AppleIcon, CircleAddIcon, HimsIcon, MetaIcon, NvidiaIcon, RingNotificationIcon, VerticalEllipsesIcon } from "@/assets/svgs";
 import { Card, Flex, IconButton, IconImageRender } from "@/components";
-import { Table } from "antd";
+import { Dropdown, MenuProps, Space, Table } from "antd";
 import { STOCK_TABLE_COLUMNS } from "../mocks/stocks";
 import { ImageWrapperProps, STOCKS_TABLE_DATA_TYPE } from "../interfaces/stock-interfaces";
 import { PercentageIndicator } from "@/shared";
@@ -64,6 +64,28 @@ function StocksSectionTable() {
   ];
 
   const COMPANY_NAMES: string[] = ["AAPL", "META", "NVDA", "HIMS"];
+
+  const items: MenuProps['items'] = [
+    {
+      key: '1',
+      label: (
+        <Flex>
+          <IconButton renderIcon={CircleAddIcon} alt="Circle Add Icon" />
+          <p className='text-md text-grey-500'>Add to watchlist</p>
+        </Flex>
+      ),
+    },
+    {
+      key: '2',
+      label: (
+        <Flex>
+          <IconButton renderIcon={RingNotificationIcon} alt="Ring Notification Icon" />
+          <p className='text-md text-grey-500'>Set Alert</p>
+        </Flex>
+      ),
+    },
+  ]
+
   return (
     <>
       <Table dataSource={STOCKS_TABLE_DATA} columns={STOCK_TABLE_COLUMNS}
@@ -77,20 +99,22 @@ function StocksSectionTable() {
       <div className="md:hidden">
         {
           STOCKS_TABLE_DATA.map((item, index) => (
-            <Card variant="borderless" className="!shadow-none" key={index}>
+            <Card variant="borderless" className="!shadow-none ant-card-shrunk" key={index} >
               <Flex justify="space-between">
-
                 <Flex align="flex-start" vertical>
                   <h1 className='text-xl'>{COMPANY_NAMES[index] || "Company"}</h1>
                   <p className='text-md text-grey-500'>{item.name}</p>
-
                 </Flex>
-                <Flex align="flex-end" vertical>
-                  <h1 className='text-xl'>{item.price}</h1>
-                  <PercentageIndicator />
+                <Flex justify="flex-end" className="!flex-1">
+                  <Flex align="flex-end" vertical>
+                    <h1 className='text-xl'>{item.price}</h1>
+                    <PercentageIndicator />
+                  </Flex>
+                  <Dropdown menu={{ items }} trigger={['click']}>
+                    <IconImageRender renderIcon={VerticalEllipsesIcon} alt="Vertical Ellipses Icon" />
+                  </Dropdown>
                 </Flex>
               </Flex>
-
             </Card>
           ))
         }

@@ -24,8 +24,8 @@ export default function Custom404(){
                         Oops! Page Not Found
                     </h2>
                     <p className="text-lg text-gray-300 leading-relaxed">
-                        The page you `&apos;`re looking for seems to have vanished into the digital void.
-                        Don`&apos;`t worry though, even the best explorers sometimes take a wrong turn.
+                        The page you&apos;re looking for seems to have vanished into the digital void.
+                        Don&apos;t worry though, even the best explorers sometimes take a wrong turn.
                     </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

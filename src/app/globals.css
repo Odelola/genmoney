@@ -222,13 +222,21 @@ h5 {
     @apply !stroke-primary
 }
 
-.table-responsive .ant-table-tbody > tr > td {
-  padding: 8px 4px;
+.ant-space-item {
+    @apply max-sm:overflow-x-scroll
+}
+
+.ant-row {
+    @apply w-full
+}
+
+.table-responsive .ant-table-tbody>tr>td {
+    padding: 8px 4px;
 }
 
 @media (max-width: 768px) {
-  .table-responsive .ant-table-tbody > tr > td {
-    padding: 6px 2px;
-    font-size: 14px;
-  }
+    .table-responsive .ant-table-tbody>tr>td {
+        padding: 6px 2px;
+        font-size: 14px;
+    }
 }

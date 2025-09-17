@@ -2,10 +2,10 @@
 import { useState } from 'react'
 import { Area } from '@ant-design/plots';
 import { CircleAddIcon, RingNotificationIcon } from '@/assets/svgs'
-import { Button, Card, Flex, IconButton } from '@/components'
+import { Button, Card, Col, Flex, IconButton } from '@/components'
 import { PercentageIndicator } from '@/shared'
 import { MAIN_CHART_FILTERS, MAIN_CHART_MOCK_ARRAY_TYPE, MAIN_CHART_MOCK_DATA } from '../mocks/main-chart';
-import { Col, Row } from 'antd';
+import { Row } from 'antd';
 
 function MainChart() {
 
@@ -98,7 +98,7 @@ function MainChart() {
                         </Flex>
                     </Flex>
 
-                    <Flex>
+                    <Flex className='max-sm:!flex-col'>
                         <IconButton bordered renderIcon={CircleAddIcon} alt="Circle Add Icon" />
                         <IconButton bordered renderIcon={RingNotificationIcon} alt="Ring Notifixation Icon" />
                     </Flex>
@@ -128,10 +128,10 @@ function MainChart() {
                 <Area {...MAIN_CHART_CONFIG} />
 
             </Card>
-            <Row gutter={10} className='mt-8'>
+            <Row gutter={[10, 10]} className='mt-8'>
                 <Col span={12}>
                     <Card>
-                        <p>Today`&apos;`s Range</p>
+                        <p>Today&apos;s Range</p>
                         <h2 className="text-xl">$1.06 - $1.28</h2>
                     </Card>
                 </Col>

@@ -14,7 +14,7 @@ interface FilterTabsProps {
 function FilterTabs({ options, defaultValue }: FilterTabsProps) {
     const [activeTab, setActiveTab] = useState('Gainers');
     return (
-        <Space className='my-8'>
+        <Space className='my-8 max-sm:w-full'>
             <Segmented
                 className='w-full [&>label]:!hidden ant-segmented-group-filter max-sm:!overflow-x-scroll'
                 style={{
