@@ -1,6 +1,7 @@
+"use client"
 import { AppleIcon, CircleAddIcon, HimsIcon, MetaIcon, NvidiaIcon, RingNotificationIcon, VerticalEllipsesIcon } from "@/assets/svgs";
 import { Card, Flex, IconButton, IconImageRender } from "@/components";
-import { Dropdown, MenuProps, Space, Table } from "antd";
+import { Dropdown, MenuProps, Table } from "antd";
 import { STOCK_TABLE_COLUMNS } from "../mocks/stocks";
 import { ImageWrapperProps, STOCKS_TABLE_DATA_TYPE } from "../interfaces/stock-interfaces";
 import { PercentageIndicator } from "@/shared";

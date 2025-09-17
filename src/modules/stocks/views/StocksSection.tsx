@@ -1,4 +1,3 @@
-import { Flex } from "@/components"
 import StocksSectionFilter from "../components/StocksSectionFilter"
 import StocksSectionTable from "../components/StocksSectionTable"
 
